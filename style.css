@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+:root {
+  --Soft-red: hsl(10, 79%, 65%);
+  --Cyan: hsl(186, 34%, 60%);
+  --Dark-brown: hsl(25, 47%, 15%);
+  --Medium-brown: hsl(28, 10%, 53%);
+  --Cream: hsl(27, 66%, 92%);
+  --Very-pale-orange: hsl(33, 100%, 98%);
+}
+* {
+  font-family: "DM Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  background-color: var(--Cream);
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main {
+  width: 350px;
+}
+.top {
+  border-radius: 1rem;
+  background-color: var(--Soft-red);
+  padding: 1rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.balance {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.balance p {
+  font-weight: 400;
+}
+.bottom {
+  background-color: white;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+.bottom h1 {
+  color: var(--Dark-brown);
+}
+#myChart {
+  margin: 1rem 0;
+}
+.divider {
+  background-color: var(--Cream);
+  width: 100%;
+  height: 2px;
+  margin-bottom: 1rem;
+}
+.totals {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.this_month p {
+  color: var(--Medium-brown);
+}
+.this_month h2 {
+  color: var(--Dark-brown);
+}
+.last_month p:first-child {
+  font-weight: 700;
+  color: var(--Dark-brown);
+}
+.last_month p:last-child {
+  color: var(--Medium-brown);
+}
